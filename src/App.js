@@ -1,45 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-import React, {useState,useEffect} from 'react';
-
+import logo from "./logo.svg";
+import "./App.css";
+import Home from "./Pages/Home";
+import React, { useState, useEffect } from "react";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+} from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import DetailPage from "./Pages/DetailPage";
 
 
 function App() {
-
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Replace 'your_api_url_here' with the actual API URL you want to fetch from.
-    fetch('http://api.nobelprize.org/v1/prize.json')
-      .then((response) => response.json())
-      .then((data) => {
-        setData(data);
-        setLoading(false);
-        console.log(data);
-      })
-      .catch((error) => {
-        console.error('Error fetching data:', error);
-        setLoading(false);
-      });
-  }, []);
-
   return (
-    <div className="App">
-      <h1>API Data</h1>
-      {loading ? (
-        <p>Loading...</p>
-      ) : (
-        <div>
-          <button onClick={() => console.log(data)}>Log Data to Console</button>
-          <ul>
-            {data[1].map((item, index) => (
-              <li key={index}>{item.name}</li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/detailpage/:year/:category" element={<DetailPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
