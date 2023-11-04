@@ -131,7 +131,7 @@ function Home() {
       <div className='container'>
         <div></div>
 
-        {selectedYear ? <h1>{selectedYear}</h1> : null}
+        {selectedYear ? <h1 className='my-4'>Year {selectedYear}</h1> : null}
 
         {Object.keys(data).map((year) => (
           <div key={year}>
@@ -139,7 +139,7 @@ function Home() {
               <h2 className='my-5'>Year {year}</h2>
             ) : null}
 
-            <div className='row g-5 mt-3'>
+            <div className='row g-5 my-2'>
               {data[year]
                 .filter(
                   (prize) =>
