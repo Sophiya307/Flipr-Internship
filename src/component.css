@@ -1,47 +1,64 @@
 .banner {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), 
-                url('./assets/img1.jpg'); /* Replace with the correct image path */
-    background-size: cover;
-    background-position: center;
-     /* Adjust the height as needed */
-    color: #fff; /* Text color on top of the gradient */
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .banner-btn{
-  background: red;
-  color: white;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url('./assets/img1.jpg'); /* Replace with the correct image path */
+  background-size: cover;
+  background-position: center;
+  /* Adjust the height as needed */
+  color: #fff; /* Text color on top of the gradient */
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner-btn {
+  background: lightblue;
+  color: black;
   padding: 10px 20px;
   border: 2px solid white;
   border-radius: 5px;
   cursor: pointer;
-  
 }
 .banner-btn:hover {
-    background: white;
-    color: red;
-    border: 2px solid red;
-
+  background: black;
+  color: white;
+  border: 2px solid white;
 }
 .card {
-    background: #f0f0f0; /* Grey background color */
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
-    text-transform: uppercase; /* Uppercase text */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-    cursor: pointer;
-    height: 200px;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px); /* Hover effect: Slightly lift the card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover effect: Bigger shadow */
-  }
-  
-  
- 
+  background: #585454;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase; /* Uppercase text */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  cursor: pointer;
+  height: 200px;
+  color: white;
+  text-decoration: underline;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Hover effect: Slightly lift the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover effect: Bigger shadow */
+}
+.card_2 {
+  background: #585454;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase; /* Uppercase text */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  cursor: pointer;
+  color: white;
+}
+
+.card_2:hover {
+  transform: translateY(-5px); /* Hover effect: Slightly lift the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover effect: Bigger shadow */
+}
+.cal {
+  height: 50px;
+  width: 50px;
+}
