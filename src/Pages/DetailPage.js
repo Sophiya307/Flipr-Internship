@@ -27,6 +27,7 @@ function DetailPage(props) {
                     {winner.surname}
                   </h4>
                   <p>{winner.motivation}</p>
+                  <p>{winner.share}</p>
                 </div>
               </div>
             ))}
